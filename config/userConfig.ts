@@ -1,6 +1,6 @@
 import { Nationality } from "../types"
 
-export const employeeId = Math.floor(Math.random() * 10000)
+export const employeeId = Math.floor(Math.random()*90000) + 10000;
 export const firstName = 'Test'
 export const lastName = 'random'
 export const nationality: Nationality = 'American'

@@ -27,14 +27,14 @@ export default defineConfig({
       name: 'chromium',
       use: { 
         ...devices['Desktop Chrome'],
-        storageState: 'playwright/.auth/user.json',
+        storageState: '.auth/user.json',
      },
       dependencies: ['authentication'],
     },
     {
       name: 'logout user',
       use: { 
-        storageState: 'playwright/.auth/user.json',
+        storageState: '.auth/user.json',
      },
       testMatch: /logout.teardown.ts/,
     },

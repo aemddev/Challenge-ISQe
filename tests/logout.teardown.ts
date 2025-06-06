@@ -4,7 +4,7 @@ import path from 'path';
 import fs from 'fs/promises'
 
 let logoutPage: LogoutPage
-const authFile = path.join(__dirname, '../playwright/.auth/user.json');
+const authFile = path.join(__dirname, '../.auth/user.json');
 
 test('Logout user', async ({ page }) => {
     logoutPage = new LogoutPage(page);

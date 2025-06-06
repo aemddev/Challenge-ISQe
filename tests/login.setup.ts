@@ -4,7 +4,7 @@ import { LoginPage } from '../pages/loginPage';
 
 let loginPage: LoginPage
 
-const authFile = path.join(__dirname, '../playwright/.auth/user.json');
+const authFile = path.join(__dirname, '../.auth/user.json');
 
 test('Login test', async ({ page }) => {
     loginPage = new LoginPage(page);
